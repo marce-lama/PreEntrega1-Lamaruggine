@@ -1,13 +1,10 @@
-const ItemListContainer = (props) => {
-  const nombre = "CoderHouse";
+import { useState } from "react";
+import ItemList from "./ItemList";
 
-  return (
-    <div>
-      <p>{props.saludoA}</p>
-      <p>{nombre}</p>
-      <p>{props.saludoB}</p>
-    </div>
-  );
+const ItemListContainer = () => {
+  const [contador, setContador] = useState(0);
+
+  return <ItemList contador={contador} setContador={setContador} />;
 };
 
 export default ItemListContainer;

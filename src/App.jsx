@@ -1,14 +1,11 @@
-import Home from "./components/pages/home/Home";
+import Navbar from "./components/layout/navbar/Navbar";
 import ItemListContainer from "./components/pages/itemList/ItemListContainer";
 
 function App() {
-  const saludo1 = "Hola";
-  const saludo2 = "Bienvenido a mi nuevo proyecto!!!";
-
   return (
     <div>
-      <Home />
-      <ItemListContainer saludoA={saludo1} saludoB={saludo2} />
+      <Navbar />
+      <ItemListContainer />
     </div>
   );
 }
