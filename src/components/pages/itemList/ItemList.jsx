@@ -1,11 +1,20 @@
-const ItemList = ({ contador, setContador }) => {
+import ProductCard from "../../common/productCard/ProductCard";
+
+const ItemList = ({ items }) => {
   return (
-    <div>
-      <h1>{contador}</h1>
-      <button onClick={() => setContador(contador + 1)}>
-        Aumentar Contador
-      </button>
-    </div>
+    <section
+      style={{
+        width: "100%",
+        display: "flex",
+        justifyContent: "space-evenly",
+        flexWrap: "wrap",
+        gap: "20px",
+      }}
+    >
+      {items.map((item) => {
+        return <ProductCard key={item.id} item={item} />;
+      })}
+    </section>
   );
 };
 

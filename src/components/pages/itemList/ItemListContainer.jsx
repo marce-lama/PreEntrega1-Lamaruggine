@@ -1,10 +1,22 @@
-import { useState } from "react";
 import ItemList from "./ItemList";
+import { products } from "../../productMock";
+import { useState, useEffect } from "react";
 
 const ItemListContainer = () => {
-  const [contador, setContador] = useState(0);
+  const [items, setItems] = useState([]);
 
-  return <ItemList contador={contador} setContador={setContador} />;
+  useEffect(() => {
+    const tarea = new Promise((resolve, reject) => {
+      resolve(products);
+      //reject("Salio todo mal");
+    });
+
+    tarea
+      .then((respuesta) => setItems(respuesta))
+      .catch((error) => console.log(error));
+  }, []);
+
+  return <ItemList items={items} />;
 };
 
 export default ItemListContainer;
