@@ -6,10 +6,11 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
+import Counter from "../counter/Counter";
 
 const ProductCard = ({ item }) => {
   return (
-    <Card sx={{ maxWidth: 300 }}>
+    <Card sx={{ maxWidth: 300, textAlign: "center" }}>
       <CardMedia
         component="img"
         alt="green iguana"

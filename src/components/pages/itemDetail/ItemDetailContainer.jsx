@@ -1,18 +1,24 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
+import { products } from "../../productMock";
 
 const ItemDetailContainer = () => {
-  const [product, setProduct] = useState({
-    id: 1,
-    name: "Telefono",
-    price: 250,
-    stock: 5,
-  });
+  const [product, setProduct] = useState({});
+
+  let id = 5;
+
+  useEffect(() => {
+    let promesa = new Promise((resolve, reject) => {
+      let productSelected = products.find((product) => product.id === id);
+      resolve(productSelected);
+    });
+
+    promesa
+      .then((resp) => setProduct(resp))
+      .catch((error) => console.log(error));
+  }, [id]);
 
   const agregarAlCarrito = (cantidad) => {
-    /*console.log("Se agrego al carrito");
-    console.log(product);
-    console.log({ cantidad });*/
     let data = {
       ...product,
       quantity: cantidad,
