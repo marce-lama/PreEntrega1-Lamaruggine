@@ -26,7 +26,7 @@ export const products = [
     title: "ZAPATILLAS JORDAN AIR 1 LOW",
     marca: "Jordan",
     price: 66999,
-    stock: 2,
+    stock: 8,
     description:
       "SIEMPRE RENOVADO. Inspirado en el original que se lanzó en 1985, el Air Jordan 1 Low ofrece un estilo clásico impecable que se resulta familiar, pero renovado. Con un diseño icónico que combina perfectamente con cualquier ajuste, este calzado garantiza que siempre estará a la moda.",
     category: "Urbanas",
@@ -48,7 +48,7 @@ export const products = [
     title: "ZAPATILLAS ADIDAS ORIGINALS SUPERSTAR",
     marca: "Adidas",
     price: 71999,
-    stock: 2,
+    stock: 6,
     description:
       "Las Zapatillas Urbanas adidas Superstar Hombre no necesitan mucha presentación. Su historia hizo que dejen de ser un calzado para ser un ícono de la moda. Nacidas en los 70's para el básquet, fueron recorriendo el mundo urbano de la mano del skateboarding y principalmente el hip-hop. Estilo de sobra con el detalle de las tres tiras (three-stripes) típicas de la marca que agregan detalle de color y elegancia y su característica puntera de caucho.",
     category: "Urbanas",

@@ -7,6 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import Counter from "../counter/Counter";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ item }) => {
   return (
@@ -29,9 +30,11 @@ const ProductCard = ({ item }) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" variant="contained">
-          Ver detalle
-        </Button>
+        <Link to={`/itemDetail/${item.id}`}>
+          <Button size="small" variant="contained">
+            Ver detalle
+          </Button>
+        </Link>
       </CardActions>
     </Card>
   );
