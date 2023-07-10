@@ -8,10 +8,11 @@ import {
 } from "@mui/material";
 import Counter from "../counter/Counter";
 import { Link } from "react-router-dom";
+import "../productCard/productCard.css";
 
 const ProductCard = ({ item }) => {
   return (
-    <Card sx={{ maxWidth: 300, textAlign: "center" }}>
+    <Card sx={{ width: "237.5px", height: "393,5px", textAlign: "center" }}>
       <CardMedia
         component="img"
         alt="green iguana"
@@ -19,19 +20,38 @@ const ProductCard = ({ item }) => {
         image={item.img}
       />
       <CardContent>
-        <Typography gutterBottom variant="h4" component="div">
+        <Typography
+          sx={{ fontSize: "20px", fontFamily: "fantasy", color: "#606C5D" }}
+          gutterBottom
+          variant="h4"
+          component="div"
+        >
           {item.title}
         </Typography>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography
+          sx={{ fontSize: "15px", fontWeight: "bolder" }}
+          gutterBottom
+          variant="h5"
+          component="div"
+        >
           {item.marca}
         </Typography>
-        <Typography gutterBottom variant="h6" component="div">
-          {item.price}
+        <Typography
+          sx={{ fontWeight: "bolder", fontFamily: "fantasy", color: "#9336B4" }}
+          gutterBottom
+          variant="h6"
+          component="div"
+        >
+          ${item.price}
         </Typography>
       </CardContent>
       <CardActions>
         <Link to={`/itemDetail/${item.id}`}>
-          <Button size="small" variant="contained">
+          <Button
+            sx={{ backgroundColor: "#606C5D", color: "white" }}
+            size="small"
+            variant="contained"
+          >
             Ver detalle
           </Button>
         </Link>
