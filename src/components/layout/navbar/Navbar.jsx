@@ -59,12 +59,12 @@ function ResponsiveAppBar() {
                   textDecoration: "none",
                 }}
               >
-                {/*<img
-                style={{ maxWidth: 100 }}
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRxIUFCFyhCmFn6559vXEtL4OVLtWsQuMo8w&usqp=CAU"
-                alt=""
-            />*/}
-                LOGO
+                <img
+                  style={{ maxWidth: 100 }}
+                  src="https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689107031/Proyecto%20React%20Js/Logo_Pagina_po6rdo.webp"
+                  alt=""
+                />
+                {/*LOGO*/}
               </Typography>
             </Link>
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
