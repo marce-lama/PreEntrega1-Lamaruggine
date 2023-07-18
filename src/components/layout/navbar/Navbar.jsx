@@ -12,7 +12,6 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import CartWidget from "../../common/cartWidget/CartWidget";
-import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const pages = ["Nosotros ", "Productos", "Contacto"];
@@ -137,9 +136,6 @@ function ResponsiveAppBar() {
           </Toolbar>
         </Container>
       </AppBar>
-      <div>
-        <Outlet />
-      </div>
     </>
   );
 }
