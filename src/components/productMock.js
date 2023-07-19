@@ -140,7 +140,7 @@ export const products = [
     description:
       "Las Zapatillas adidas Ultraboost 22 son una mejora de su predecesor, con un calce perfeccionado y una suela que optimiza tu tracción día a día. El calce es ideal para los corredores más exigentes, con un tejido PRIMEKNIT en la capellada que se ajusta mejor a ellos para evitar resbalones y accidentes. La mediasuela BOOST mejora la amortiguación y su sistema Linear Energy Push garantiza el retorno de energía que necesitas para sumar kilómetros en cada salida.",
     category: "Deportivas",
-    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688396095/Proyecto%20React%20Js/Adidas%20Deportivas/Zapatillas%20adidas%20Ultraboost%2022%20Black.jpg",
+    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779972/Proyecto%20React%20Js/Adidas%20Deportivas/Zapatillas_adidas_Ultraboost_22_Black_c5qokf.jpg",
   },
   {
     id: 14,
@@ -151,7 +151,7 @@ export const products = [
     description:
       "Agregá una experiencia de energía a tus carreras con las Zapatillas Running adidas Ultraboost Light Unisex. Un calzado hecho para darte comodidad, amortiguación y retorno de energía gracias a su mediasuela BOOST y una confección en mesh que le añade libertad a tus pies. Además, están hechas con contenido reciclado para hacerte sentir muy bien al llevarlas puestas.",
     category: "Deportivas",
-    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688396079/Proyecto%20React%20Js/Adidas%20Deportivas/Zapatillas%20Running%20adidas%20Ultraboost%20Light%20Unisex.jpg",
+    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779971/Proyecto%20React%20Js/Adidas%20Deportivas/Zapatillas_Running_adidas_Ultraboost_Light_Unisex_so99hn.jpg",
   },
   {
     id: 15,
@@ -162,7 +162,7 @@ export const products = [
     description:
       "Las Zapatillas adidas Ultraboost 22 son una mejora de su predecesor, con un calce perfeccionado y una suela que optimiza tu tracción día a día. El calce es ideal para los corredores más exigentes, con un tejido PRIMEKNIT en la capellada que se ajusta mejor a ellos para evitar resbalones y accidentes. La mediasuela BOOST mejora la amortiguación y su sistema Linear Energy Push garantiza el retorno de energía que necesitas para sumar kilómetros en cada salida.",
     category: "Deportivas",
-    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688396058/Proyecto%20React%20Js/Adidas%20Deportivas/Zapatillas%20adidas%20Ultraboost%2022.jpg",
+    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779971/Proyecto%20React%20Js/Adidas%20Deportivas/Zapatillas_adidas_Ultraboost_22_zjvxdz.jpg",
   },
   {
     id: 16,
@@ -173,7 +173,7 @@ export const products = [
     description:
       "Las Zapatillas adidas 4d Fwd Pulse es la clave para tus momentos de running. Cuenta con un refuerzo en el talón tridimensional a partir de resina líquida, luz y oxígeno para lograr un mejor control de impactos y contribuir a un despegue e impulsos muchos más rápidos. La malla de su parte superior te otorga ventilación y a la vez, permite mover tus pies con mayor libertad. Además, están hechas con al menos un 50% de contenido reciclado, para que además de ocuparte de tu salud, te comprometas aún más con el planeta. No te las vas a querer sacar.",
     category: "Deportivas",
-    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688396034/Proyecto%20React%20Js/Adidas%20Deportivas/Zapatillas%20Running%20adidas%204DFWD%20Pulse%20Hombre.jpg",
+    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779973/Proyecto%20React%20Js/Adidas%20Deportivas/Zapatillas_Running_adidas_4DFWD_Pulse_Hombre_jbrnfa.jpg",
   },
   {
     id: 17,
@@ -184,7 +184,7 @@ export const products = [
     description:
       "Poné el cronómetro y empezá a medir tu carrera con las Zapatillas Asics Gel-nimbus 25. Un calzado hecho especialmente para darte rendimiento, comodidad y soporte durante todo el momento que las lleves puestas. Con una construcción en mesh de calidad para usar por muchos años y una suela de goma elevada que mejora tu postura. La tecnología FF Blast en el antepié te hace sentir como si estuvieras pisando el mismo aire. El diseño de este calzado crea un outfit deportivo ideal para combinar con tu look deportivo.",
     category: "Deportivas",
-    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688396523/Proyecto%20React%20Js/Asics%20Deportivas/Zapatillas%20Asics%20Gel-nimbus%2025.jpg",
+    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779863/Proyecto%20React%20Js/Asics%20Deportivas/Zapatillas_Asics_Gel-nimbus_25_y0ayhz.jpg",
   },
   {
     id: 18,
@@ -195,7 +195,7 @@ export const products = [
     description:
       "Enciende el GPS y comieza a recrorrer la ciudad con las Zapatillas Asics Gel-nimbus 24 Standar. Super comodas y hechas especialmente para armotiguar el impacto sobre suelo",
     category: "Deportivas",
-    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688396541/Proyecto%20React%20Js/Asics%20Deportivas/Zapatillas%20Asics%20Gel-nimbus%2024%20Standar.jpg",
+    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779863/Proyecto%20React%20Js/Asics%20Deportivas/Zapatillas_Asics_Gel-nimbus_24_Standar_bhngdk.jpg",
   },
   {
     id: 19,
@@ -206,7 +206,7 @@ export const products = [
     description:
       "Sumergite en las pistas con las Zapatillas Running Asics Kayano 29 Hombre. Un calzado con mucha tecnología para tus momentos de corrida, confeccionado en una parte superior de malla que te entrega transpirabilidad y libertad de movimiento. Incorpora una mediasuela con tecnología GEL para absorber impactos y mejorar cada aterrizaje a lo que se suma la tecnología FF BLAST para un rebote sensible. Con este par, sentirás que estás corriendo en el espacio!",
     category: "Deportivas",
-    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688396560/Proyecto%20React%20Js/Asics%20Deportivas/Zapatillas%20Running%20Asics%20Kayano%2029%20Hombre.jpg",
+    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779863/Proyecto%20React%20Js/Asics%20Deportivas/Zapatillas_Running_Asics_Kayano_29_Hombre_agukug.jpg",
   },
   {
     id: 20,
@@ -217,7 +217,7 @@ export const products = [
     description:
       "Empezá la carrera con las Zapatillas Asics Gel-Cumulus 24 Se. Un calzado con rendimiento óptimo, comodidad y tecnología. Hecho de malla para garantizarte libre movimiento y ventilación en todo el tiempo de entrenamiento y con tecnología FlyteFoam que proporciona amortiguación y resistencia a los impactos. La suela de goma te asegura tracción en distintas superficies para que nada te preocupe ni se interponga en el objetivo. Ponételas y alcanzá la meta, o mejor aún, superala!",
     category: "Deportivas",
-    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688396584/Proyecto%20React%20Js/Asics%20Deportivas/Zapatillas%20Running%20Asics%20Gel-cumulus%2024%20Se%20Hombre.jpg",
+    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779863/Proyecto%20React%20Js/Asics%20Deportivas/Zapatillas_Running_Asics_Gel-cumulus_24_Se_Hombre_qfueum.jpg",
   },
   {
     id: 21,
@@ -228,7 +228,7 @@ export const products = [
     description:
       "Las Zapatillas Running Nike Air Zoom Vomero 16 Hombre son un calzado deportivo diseñado para ofrecer una gran comodidad y rendimiento en carrera. Confeccionadas con una parte superior de malla transpirable y una suela de goma resistente, ofrecen una gran flexibilidad y tracción en diferentes superficies. La tecnología Zoom Air en la entresuela brinda una amortiguación reactiva y una mayor velocidad. Además, su diseño de corte alto y sus cordones elásticos garantizan un ajuste seguro y único para cada persona. Ideales para corredores que buscan un calzado cómodo, ligero y con excelente amortiguación para sus entrenamientos y competiciones.",
     category: "Deportivas",
-    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688396272/Proyecto%20React%20Js/Nike%20Deportivas/Zapatillas%20Running%20Nike%20Air%20Zoom%20Vomero%2016%20Hombre.jpg",
+    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779918/Proyecto%20React%20Js/Nike%20Deportivas/Zapatillas_Running_Nike_Air_Zoom_Vomero_16_Hombre_l9bkax.jpg",
   },
   {
     id: 22,
@@ -239,7 +239,7 @@ export const products = [
     description:
       "Las Zapatillas Running Nike React Infinity Run Fk 3 Hombre son un calzado deportivo diseñado para ofrecer una gran comodidad y rendimiento en carrera.",
     category: "Deportivas",
-    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688396295/Proyecto%20React%20Js/Nike%20Deportivas/Zapatillas%20Nike%20React%20Infinity%20Run%20Fk%203%20Hombre.jpg",
+    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779916/Proyecto%20React%20Js/Nike%20Deportivas/Zapatillas_Nike_React_Infinity_Run_Flyknit_3_oeynzj.jpg",
   },
   {
     id: 23,
@@ -250,7 +250,7 @@ export const products = [
     description:
       "Las Zapatillas Running Nike React Infinity Run Fk 3 Hombre son un calzado deportivo diseñado para ofrecer una gran comodidad y rendimiento en carrera.",
     category: "Deportivas",
-    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688396313/Proyecto%20React%20Js/Nike%20Deportivas/Zapatillas%20Nike%20React%20Infinity%20Run%20Flyknit%203.jpg",
+    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779917/Proyecto%20React%20Js/Nike%20Deportivas/Zapatillas_Nike_React_Infinity_Run_Fk_3_Hombre_b2itdo.jpg",
   },
   {
     id: 24,
@@ -261,6 +261,6 @@ export const products = [
     description:
       "Acelera tus pasos con las Zapatillas Running Nike Zoom Fly 5 Hombre. Confeccionadas con materiales sintéticos de alta calidad, con la parte superior de mesh transpirable que mantiene tus pies frescos y una mediasuela con espuma ZoomX que te ayuda a subir el nivel de tu rendimiento. Este calzado te ofrece la comodidad, seguridad y velocidad que necesitas durante todas tus carreras.",
     category: "Deportivas",
-    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688396336/Proyecto%20React%20Js/Nike%20Deportivas/Zapatillas%20Running%20Nike%20Zoom%20Fly%205%20Hombre.jpg",
+    img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779919/Proyecto%20React%20Js/Nike%20Deportivas/Zapatillas_Running_Nike_Zoom_Fly_5_Hombre_qii2xn.jpg",
   },
 ];
