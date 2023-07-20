@@ -2,7 +2,10 @@ import { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
 
 const CartContainer = () => {
-  const { cart, clearCart, deleteById } = useContext(CartContext);
+  const { cart, clearCart, deleteById, getTotalPrice } =
+    useContext(CartContext);
+
+  let totalPrice = getTotalPrice();
 
   return (
     <div>
@@ -20,6 +23,9 @@ const CartContainer = () => {
       })}
 
       <button onClick={clearCart}>LimpiarCarrito</button>
+
+      <h4>El total a pagar es: {totalPrice}</h4>
+      <button>Terminar Compra</button>
     </div>
   );
 };

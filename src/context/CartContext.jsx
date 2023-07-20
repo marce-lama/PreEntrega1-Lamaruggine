@@ -12,7 +12,7 @@ const CartContextComponent = ({ children }) => {
         if (product.id === elemento.id) {
           return {
             ...elemento,
-            quantity: elemento.quantity + product.quantity,
+            quantity: product.quantity,
           };
         } else {
           return elemento;
@@ -33,11 +33,34 @@ const CartContextComponent = ({ children }) => {
     setCart(newArr);
   };
 
+  const getTotalQuantity = () => {
+    let total = cart.reduce((acumulador, elemento) => {
+      return acumulador + elemento.quantity;
+    }, 0);
+    return total;
+  };
+
+  const getTotalPrice = () => {
+    let totalPrice = cart.reduce((acumulador, elemento) => {
+      return acumulador + elemento.price * elemento.quantity;
+    }, 0);
+    return totalPrice;
+  };
+
+  const getQuantityById = (id) => {
+    let producto = cart.find((elemento) => elemento.id === +id);
+
+    return producto?.quantity;
+  };
+
   let data = {
     cart,
     addToCart,
     clearCart,
     deleteById,
+    getTotalQuantity,
+    getTotalPrice,
+    getQuantityById,
   };
 
   return <CartContext.Provider value={data}>{children}</CartContext.Provider>;
