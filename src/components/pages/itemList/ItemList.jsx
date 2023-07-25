@@ -5,6 +5,8 @@ import {
   Checkbox,
   FormControlLabel,
   FormGroup,
+  Skeleton,
+  Stack,
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -12,6 +14,8 @@ import ProductCard from "../../common/productCard/ProductCard";
 import { Link } from "react-router-dom";
 
 const ItemList = ({ items }) => {
+  let arr = [1, 2, 3, 4];
+
   return (
     <section
       style={{ display: "flex", padding: "10px", backgroundColor: "#EEEEEE" }}
@@ -120,9 +124,15 @@ const ItemList = ({ items }) => {
           marginTop: "30px",
         }}
       >
-        {items.map((item) => {
-          return <ProductCard key={item.id} item={item} />;
-        })}
+        {items.length > 0
+          ? items.map((item) => {
+              return <ProductCard key={item.id} item={item} />;
+            })
+          : arr.map((elemento) => (
+              <Stack spacing={1} key={elemento}>
+                <Skeleton variant="rectangular" width={237.5} height={393.5} />
+              </Stack>
+            ))}
       </div>
     </section>
   );

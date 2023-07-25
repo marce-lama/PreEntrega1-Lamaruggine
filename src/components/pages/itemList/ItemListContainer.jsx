@@ -2,6 +2,8 @@ import ItemList from "./ItemList";
 import { products } from "../../productMock";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import DotLoader from "react-spinners/DotLoader";
+import { Skeleton, Stack } from "@mui/material";
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
@@ -14,8 +16,10 @@ const ItemListContainer = () => {
     );
 
     const tarea = new Promise((resolve, reject) => {
-      resolve(categoryName ? productsFilter : products);
-      //reject("Salio todo mal");
+      setTimeout(() => {
+        resolve(categoryName ? productsFilter : products);
+        //reject("Salio todo mal");
+      }, 4000);
     });
 
     tarea
@@ -23,7 +27,11 @@ const ItemListContainer = () => {
       .catch((error) => console.log(error));
   }, [categoryName]);
 
-  return <ItemList items={items} />;
+  return (
+    <>
+      <ItemList items={items} />;
+    </>
+  );
 };
 
 export default ItemListContainer;
