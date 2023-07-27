@@ -13,6 +13,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import CartWidget from "../../common/cartWidget/CartWidget";
 import { Link } from "react-router-dom";
+import "../navbar/Navbar.css";
 
 const pages = ["Nosotros ", "Productos", "Contacto"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -41,13 +42,10 @@ function ResponsiveAppBar() {
       <AppBar position="static" color="secondary">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            {/*<AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />*/}
             <Link to="/" style={{ color: "white", textDecoration: "none" }}>
               <Typography
                 variant="h6"
                 noWrap
-                //component="a"
-                //href="/"
                 sx={{
                   mr: 2,
                   display: { xs: "none", md: "flex" },
@@ -59,24 +57,25 @@ function ResponsiveAppBar() {
                 }}
               >
                 <img
-                  style={{ maxWidth: 100 }}
+                  style={{ maxWidth: 80 }}
                   src="https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689107031/Proyecto%20React%20Js/Logo_Pagina_po6rdo.webp"
                   alt=""
                 />
-                {/*LOGO*/}
               </Typography>
             </Link>
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-                color="inherit"
-              >
-                <MenuIcon />
-              </IconButton>
+              {
+                <IconButton
+                  size="large"
+                  aria-label="account of current user"
+                  aria-controls="menu-appbar"
+                  aria-haspopup="true"
+                  onClick={handleOpenNavMenu}
+                  color="inherit"
+                >
+                  <MenuIcon />
+                </IconButton>
+              }
               <Menu
                 id="menu-appbar"
                 anchorEl={anchorElNav}
@@ -119,7 +118,11 @@ function ResponsiveAppBar() {
                 textDecoration: "none",
               }}
             >
-              LOGO
+              <img
+                style={{ maxWidth: 80 }}
+                src="https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689107031/Proyecto%20React%20Js/Logo_Pagina_po6rdo.webp"
+                alt=""
+              />
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               {pages.map((page) => (
@@ -132,10 +135,40 @@ function ResponsiveAppBar() {
                 </Button>
               ))}
             </Box>
+            <Link to={"/dashboard"}>
+              <Button
+                style={{ marginRight: 80, backgroundColor: "#606C5D" }}
+                variant="contained"
+              >
+                Admin
+              </Button>
+            </Link>
             <CartWidget />
           </Toolbar>
         </Container>
       </AppBar>
+      <div
+        className="listaCategoryContainer"
+        style={{
+          backgroundColor: "#606C5D",
+          height: 50,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <ul className="listCategory">
+          <Link to="/">
+            <li className="itemCategory">TODAS</li>
+          </Link>
+          <Link to="/category/Urbanas">
+            <li className="itemCategory">URBANAS</li>
+          </Link>
+          <Link to="/category/Deportivas">
+            <li className="itemCategory">DEPORTIVAS</li>
+          </Link>
+        </ul>
+      </div>
     </>
   );
 }

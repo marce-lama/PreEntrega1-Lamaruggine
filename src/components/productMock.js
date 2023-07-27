@@ -1,6 +1,5 @@
 export const products = [
   {
-    id: 1,
     title: "BOTITAS JORDAN AIR 5 RETRO",
     marca: "Jordan",
     price: 87.999,
@@ -11,7 +10,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688344680/Proyecto%20React%20Js/Zapatillas%20Jordan/BOTITAS%20JORDAN%20AIR%205%20RETRO%20BLANCO.jpg",
   },
   {
-    id: 2,
     title: "BOTITAS JORDAN AIR 1 MID TRUE BLUE",
     marca: "Jordan",
     price: 72.999,
@@ -22,7 +20,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688344512/Proyecto%20React%20Js/Zapatillas%20Jordan/BOTITAS%20JORDAN%20AIR%201%20MID%20TRUE%20BLUE.jpg",
   },
   {
-    id: 3,
     title: "ZAPATILLAS JORDAN AIR 1 LOW",
     marca: "Jordan",
     price: 66.999,
@@ -33,7 +30,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688344659/Proyecto%20React%20Js/Zapatillas%20Jordan/ZAPATILLAS%20JORDAN%20AIR%201%20LOW.jpg",
   },
   {
-    id: 4,
     title: "BOTITAS JORDAN MAX AURA 4",
     marca: "Jordan",
     price: 71.999,
@@ -44,7 +40,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688344456/Proyecto%20React%20Js/Zapatillas%20Jordan/BOTITAS%20JORDAN%20MAX%20AURA%204.jpg",
   },
   {
-    id: 5,
     title: "ZAPATILLAS ADIDAS ORIGINALS SUPERSTAR",
     marca: "Adidas",
     price: 71.999,
@@ -55,7 +50,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688345446/Proyecto%20React%20Js/Adidas%20Originals/ZAPATILLAS%20ADIDAS%20ORIGINALS%20SUPERSTAR%20GREY.jpg",
   },
   {
-    id: 6,
     title: "ZAPATILLAS ADIDAS ORIGINALS FORUM LOW BLANCO",
     marca: "Adidas",
     price: 44.499,
@@ -66,7 +60,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688345308/Proyecto%20React%20Js/Adidas%20Originals/ZAPATILLAS%20ADIDAS%20ORIGINALS%20FORUM%20LOW%20BLANCO.jpg",
   },
   {
-    id: 7,
     title: "ZAPATILLAS ADIDAS ORIGINALS NMD_R1",
     marca: "Adidas",
     price: 52.799,
@@ -77,7 +70,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688345085/Proyecto%20React%20Js/Adidas%20Originals/ZAPATILLAS%20ADIDAS%20ORIGINALS%20NMD_R1.jpg",
   },
   {
-    id: 8,
     title: "ZAPATILLAS ADIDAS ORIGINALS SUPERSTAR",
     marca: "Adidas",
     price: 40.899,
@@ -88,7 +80,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688345339/Proyecto%20React%20Js/Adidas%20Originals/ZAPATILLAS%20ADIDAS%20ORIGINALS%20SUPERSTAR.jpg",
   },
   {
-    id: 9,
     title: "BOTITAS NIKE AIR FORCE 1 HIGHT 07 LV8",
     marca: "Nike",
     price: 68.309,
@@ -99,7 +90,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688345728/Proyecto%20React%20Js/Nike/BOTITAS%20NIKE%20AIR%20FORCE%201%20HIGHT%2007%20LV8.jpg",
   },
   {
-    id: 10,
     title: "ZAPATILLAS NIKE AIR FORCE 1 REACT",
     marca: "Nike",
     price: 82.999,
@@ -110,7 +100,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688345673/Proyecto%20React%20Js/Nike/ZAPATILLAS%20NIKE%20AIR%20FORCE%201%20REACT.jpg",
   },
   {
-    id: 11,
     title: "BOTITAS NIKE LUNAR FORCE 1 DUCKBOOT",
     marca: "Nike",
     price: 10.7999,
@@ -121,7 +110,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688345640/Proyecto%20React%20Js/Nike/BOTITAS%20NIKE%20LUNAR%20FORCE%201%20DUCKBOOT.jpg",
   },
   {
-    id: 12,
     title: "BOTITAS NIKE DUNK HI RETRO",
     marca: "Nike",
     price: 69.999,
@@ -132,7 +120,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1688345656/Proyecto%20React%20Js/Nike/BOTITAS%20NIKE%20DUNK%20HI%20RETRO.jpg",
   },
   {
-    id: 13,
     title: "ADIDAS ULTRABOOST 22",
     marca: "Adidas",
     price: 62.399,
@@ -143,7 +130,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779972/Proyecto%20React%20Js/Adidas%20Deportivas/Zapatillas_adidas_Ultraboost_22_Black_c5qokf.jpg",
   },
   {
-    id: 14,
     title: "ADIDAS ULTRABOOST LIGHT UNISEX",
     marca: "Adidas",
     price: 99.999,
@@ -154,7 +140,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779971/Proyecto%20React%20Js/Adidas%20Deportivas/Zapatillas_Running_adidas_Ultraboost_Light_Unisex_so99hn.jpg",
   },
   {
-    id: 15,
     title: "ADIDAS ULTRABOOST 22",
     marca: "Adidas",
     price: 62.399,
@@ -165,7 +150,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779971/Proyecto%20React%20Js/Adidas%20Deportivas/Zapatillas_adidas_Ultraboost_22_zjvxdz.jpg",
   },
   {
-    id: 16,
     title: "ADIDAS 4DFWD PULSE HOMBRE",
     marca: "Adidas",
     price: 60.099,
@@ -176,7 +160,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779973/Proyecto%20React%20Js/Adidas%20Deportivas/Zapatillas_Running_adidas_4DFWD_Pulse_Hombre_jbrnfa.jpg",
   },
   {
-    id: 17,
     title: "ASICS GEL-NIMBUS 25",
     marca: "Asics",
     price: 71.299,
@@ -187,7 +170,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779863/Proyecto%20React%20Js/Asics%20Deportivas/Zapatillas_Asics_Gel-nimbus_25_y0ayhz.jpg",
   },
   {
-    id: 18,
     title: "ASICS GEL-NIMBUS 24 STANDAR",
     marca: "Asics",
     price: 58.989,
@@ -198,7 +180,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779863/Proyecto%20React%20Js/Asics%20Deportivas/Zapatillas_Asics_Gel-nimbus_24_Standar_bhngdk.jpg",
   },
   {
-    id: 19,
     title: "ASICS KAYANO 29 HOMBRE",
     marca: "Asics",
     price: 64.799,
@@ -209,7 +190,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779863/Proyecto%20React%20Js/Asics%20Deportivas/Zapatillas_Running_Asics_Kayano_29_Hombre_agukug.jpg",
   },
   {
-    id: 20,
     title: "ASICS GEL-CUMULUS SE HOMBRE",
     marca: "Asics",
     price: 55.369,
@@ -220,7 +200,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779863/Proyecto%20React%20Js/Asics%20Deportivas/Zapatillas_Running_Asics_Gel-cumulus_24_Se_Hombre_qfueum.jpg",
   },
   {
-    id: 21,
     title: "NIKE AIR ZOOM VOMERO 16 HOMBRE",
     marca: "Nike",
     price: 84.999,
@@ -231,7 +210,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779918/Proyecto%20React%20Js/Nike%20Deportivas/Zapatillas_Running_Nike_Air_Zoom_Vomero_16_Hombre_l9bkax.jpg",
   },
   {
-    id: 22,
     title: "NIKE REACT INFINITY RUN FK 3 HOMBRE",
     marca: "Nike",
     price: 83.999,
@@ -242,7 +220,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779916/Proyecto%20React%20Js/Nike%20Deportivas/Zapatillas_Nike_React_Infinity_Run_Flyknit_3_oeynzj.jpg",
   },
   {
-    id: 23,
     title: "NIKE REACT INFINITY RUN FLYKNIT 3",
     marca: "Nike",
     price: 83.999,
@@ -253,7 +230,6 @@ export const products = [
     img: "https://res.cloudinary.com/dhdhzwlz9/image/upload/v1689779917/Proyecto%20React%20Js/Nike%20Deportivas/Zapatillas_Nike_React_Infinity_Run_Fk_3_Hombre_b2itdo.jpg",
   },
   {
-    id: 24,
     title: "NIKE ZOOM FLY 5 HOMBRE",
     marca: "Nike",
     price: 94.999,

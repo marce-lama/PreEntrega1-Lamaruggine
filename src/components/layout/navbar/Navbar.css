@@ -1,0 +1,10 @@
+.listCategory {
+  list-style-type: none;
+  text-align: center;
+}
+.itemCategory {
+  display: inline;
+  margin-right: 20px;
+  font-family: fantasy;
+  color: white;
+}
