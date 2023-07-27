@@ -12,11 +12,16 @@ const Checkout = ({ funcionDelFormulario, funcionDeLosInput }) => {
         <input
           type="text"
           placeholder="Ingrese su apellido"
-          name="lastName"
+          name="phone"
+          onChange={funcionDeLosInput}
+        />
+        <input
+          type="text"
+          placeholder="Ingrese su apellido"
+          name="email"
           onChange={funcionDeLosInput}
         />
         <button type="submit">Enviar</button>
-        <button type="button">Cancelar</button>
       </form>
     </div>
   );

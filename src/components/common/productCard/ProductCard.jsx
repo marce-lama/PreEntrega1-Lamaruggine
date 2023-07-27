@@ -6,7 +6,6 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
-import Counter from "../counter/Counter";
 import { Link } from "react-router-dom";
 import "../productCard/productCard.css";
 

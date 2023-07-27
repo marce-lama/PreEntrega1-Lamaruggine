@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
 import Swal from "sweetalert2";
+import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const CartContainer = () => {
   const { cart, clearCart, deleteById, getTotalPrice } =
@@ -15,7 +17,6 @@ const CartContainer = () => {
       confirmButtonText: "Vaciar",
       denyButtonText: `No Vaciar`,
     }).then((result) => {
-      /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
         clearCart();
         Swal.fire("El carrito se ha vaciado con exito!", "", "success");
@@ -41,7 +42,9 @@ const CartContainer = () => {
             <h4>{elemento.title}</h4>
             <h4>{elemento.price}</h4>
             <h4>{elemento.quantity}</h4>
-            <button onClick={() => deleteById(elemento.id)}>Eliminar</button>
+            <Button variant="contained" onClick={() => deleteById(elemento.id)}>
+              Eliminar
+            </Button>
           </div>
         );
       })}
@@ -49,8 +52,12 @@ const CartContainer = () => {
       {cart.length > 0 && (
         <>
           {" "}
-          <button onClick={limpiar}>Limpiar Carrito</button>
-          <button>Terminar Compra</button>
+          <Button variant="contained" onClick={limpiar}>
+            Limpiar Carrito
+          </Button>
+          <Link to="/checkout">
+            <Button variant="contained">Terminar Compra</Button>
+          </Link>
         </>
       )}
 

@@ -4,7 +4,8 @@ import Checkout from "./Checkout";
 const CheckoutContainer = () => {
   const [userData, setUserData] = useState({
     name: "",
-    lastName: "",
+    phone: "",
+    email: "",
   });
 
   const funcionDelFormulario = (evento) => {
