@@ -1,5 +1,6 @@
 import { Box, TextField } from "@mui/material";
 import "../footer/Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -28,8 +29,36 @@ const Footer = () => {
         <div></div>
         <div></div>
       </div>
-      <div>
-        <h2 className="footerContainerInf">Aca van los enlaces</h2>
+      <div className="footerContainerInf">
+        <ul>
+          <Link style={{ textDecoration: "none" }}>
+            <li className="itemListFooter">Quienes somos</li>
+          </Link>
+          <Link style={{ textDecoration: "none" }}>
+            <li className="itemListFooter">Preguntas frecuentes</li>
+          </Link>
+          <Link style={{ textDecoration: "none" }}>
+            <li className="itemListFooter">Sucursales</li>
+          </Link>
+          <Link style={{ textDecoration: "none" }}>
+            <li className="itemListFooter">Formas de pago</li>
+          </Link>
+          <Link style={{ textDecoration: "none" }}>
+            <li className="itemListFooter">Términos y condiciones</li>
+          </Link>
+          <Link style={{ textDecoration: "none" }}>
+            <li className="itemListFooter">Políticas de cambios</li>
+          </Link>
+          <Link style={{ textDecoration: "none" }}>
+            <li className="itemListFooter">Defensa del consumidor</li>
+          </Link>
+          <Link style={{ textDecoration: "none" }}>
+            <li className="itemListFooter">Políticas de envíos</li>
+          </Link>
+          <Link style={{ textDecoration: "none" }}>
+            <li className="itemListFooter">Retiro en sucursal en 24 hs</li>
+          </Link>
+        </ul>
       </div>
     </>
   );

@@ -13,12 +13,33 @@ const Counter = ({ counter, setCounter, agregarAlCarrito, stock }) => {
 
   return (
     <div>
-      <div style={{ display: "flex" }}>
-        <Button variant="contained" onClick={restar}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Button
+          style={{
+            backgroundColor: "#606C5D",
+            fontFamily: "fantasy",
+            fontSize: 15,
+            marginRight: 10,
+          }}
+          variant="contained"
+          onClick={restar}
+        >
           -
         </Button>
-        <h4>{counter}</h4>
+        <h4 style={{ fontFamily: "fantasy", marginRight: 10 }}>{counter}</h4>
         <Button
+          style={{
+            backgroundColor: "#606C5D",
+            fontFamily: "fantasy",
+            fontSize: 15,
+            marginRight: 10,
+          }}
           /*disabled={counter < stock ? false : true}*/ // Esta es una opcion
           disabled={counter >= stock} // Esta es otra opcion
           variant="contained"
@@ -28,13 +49,16 @@ const Counter = ({ counter, setCounter, agregarAlCarrito, stock }) => {
         </Button>
       </div>
 
-      <Button
-        variant="contained"
-        color="secondary"
-        onClick={() => agregarAlCarrito(counter)}
-      >
-        Agregar al Carrito
-      </Button>
+      <div style={{ textAlign: "center" }}>
+        <Button
+          style={{ marginTop: 20, fontFamily: "fantasy" }}
+          variant="contained"
+          color="secondary"
+          onClick={() => agregarAlCarrito(counter)}
+        >
+          Agregar al Carrito
+        </Button>
+      </div>
     </div>
   );
 };

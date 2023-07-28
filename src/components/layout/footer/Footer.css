@@ -9,6 +9,17 @@
 .footerContainerInf {
   background-color: #9336b4;
   max-height: auto;
+  columns: 3;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.itemListFooter {
+  color: white;
+  list-style: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 15px;
 }
 
 .suscription {

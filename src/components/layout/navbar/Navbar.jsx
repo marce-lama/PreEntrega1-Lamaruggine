@@ -158,13 +158,13 @@ function ResponsiveAppBar() {
         }}
       >
         <ul className="listCategory">
-          <Link to="/">
+          <Link style={{ textDecoration: "none" }} to="/">
             <li className="itemCategory">TODAS</li>
           </Link>
-          <Link to="/category/Urbanas">
+          <Link style={{ textDecoration: "none" }} to="/category/Urbanas">
             <li className="itemCategory">URBANAS</li>
           </Link>
-          <Link to="/category/Deportivas">
+          <Link style={{ textDecoration: "none" }} to="/category/Deportivas">
             <li className="itemCategory">DEPORTIVAS</li>
           </Link>
         </ul>

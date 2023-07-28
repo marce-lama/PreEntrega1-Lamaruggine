@@ -16,7 +16,7 @@ import ProductCard from "../../common/productCard/ProductCard";
 import { Link } from "react-router-dom";
 import "../itemList/ItemList.css";
 const ItemList = ({ items }) => {
-  let arr = [1, 2, 3, 4];
+  let arr = [1, 2, 3, 4, 5];
 
   return (
     <section

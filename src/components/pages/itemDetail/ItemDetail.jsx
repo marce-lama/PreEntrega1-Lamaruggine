@@ -8,17 +8,26 @@ const ItemDetail = ({
   cantidadEnCarrito,
 }) => {
   return (
-    <div>
-      <h1 className="model">{product.title}</h1>
-      <img className="imageProduct" src={`${product.img}`} alt="" />
-      <h3 className="price">{product.price}</h3>
-
-      <CounterContainer
-        agregarAlCarrito={agregarAlCarrito}
-        stock={stock}
-        cantidadEnCarrito={cantidadEnCarrito}
-      />
-    </div>
+    <>
+      <div className="detailContainer">
+        <div className="imgProductContainer">
+          <img className="imageProduct" src={`${product.img}`} alt="" />
+        </div>
+        <div>
+          <h1 className="model">{product.title}</h1>
+          <h4 className="marca">{product.marca}</h4>
+          <h3 className="price">${product.price}</h3>
+          <CounterContainer
+            agregarAlCarrito={agregarAlCarrito}
+            stock={stock}
+            cantidadEnCarrito={cantidadEnCarrito}
+          />
+        </div>
+      </div>
+      <div>
+        <p className="description">{product.description}</p>
+      </div>
+    </>
   );
 };
 
