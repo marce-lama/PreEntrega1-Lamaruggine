@@ -34,7 +34,9 @@ const CartContainer = () => {
 
   return (
     <div>
-      <h1>Este es el carrito</h1>
+      {cart.length === 0 && (
+        <h1 className="textCart">El carrito aun no contiene productos ☹ </h1>
+      )}
 
       {cart.map((elemento) => {
         return (
@@ -60,8 +62,7 @@ const CartContainer = () => {
           </Link>
         </>
       )}
-
-      <h4>El total a pagar es: {totalPrice}</h4>
+      {cart.length > 0 && <h4>El total a pagar es: ${totalPrice}</h4>}
     </div>
   );
 };

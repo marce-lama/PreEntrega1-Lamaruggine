@@ -22,8 +22,6 @@ const ItemListContainer = () => {
     }
 
     getDocs(consulta).then((res) => {
-      console.log(res.docs);
-
       let newArrayProducts = res.docs.map((product) => {
         return { ...product.data(), id: product.id };
       });

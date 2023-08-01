@@ -1,0 +1,21 @@
+.titleAgrader {
+  font-family: fantasy;
+  font-size: 60px;
+  color: #9336b4;
+}
+
+.orderNumber {
+  font-family: fantasy;
+  font-size: 30px;
+  color: #606c5d;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.textCart {
+  font-family: fantasy;
+  color: #9336b4;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}

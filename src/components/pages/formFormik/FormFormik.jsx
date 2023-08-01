@@ -3,8 +3,16 @@ import { useFormik } from "formik";
 import { useContext, useState } from "react";
 import * as Yup from "yup";
 import { CartContext } from "../../../context/CartContext";
-import { addDoc, collection, doc, serverTimestamp } from "firebase/firestore";
+import {
+  addDoc,
+  collection,
+  doc,
+  serverTimestamp,
+  updateDoc,
+} from "firebase/firestore";
 import { db } from "../../../firebaseConfig";
+import "../formFormik/FormFormik.css";
+import { initializeApp } from "firebase/app";
 
 const FormFormik = () => {
   const { cart, getTotalPrice } = useContext(CartContext);
@@ -50,38 +58,54 @@ const FormFormik = () => {
   return (
     <div style={{ padding: "40px", alignItems: "center" }}>
       {!orderId ? (
-        <form onSubmit={handleSubmit}>
-          <TextField
-            label="Nombre"
-            variant="outlined"
-            name="name"
-            onChange={handleChange}
-            error={errors.name ? true : false}
-            helperText={errors.name}
-          />
-          <TextField
-            label="Email"
-            variant="outlined"
-            name="email"
-            onChange={handleChange}
-            error={errors.email ? true : false}
-            helperText={errors.email}
-          />
-          <TextField
-            label="Phone"
-            variant="outlined"
-            name="phone"
-            onChange={handleChange}
-            error={errors.phone ? true : false}
-            helperText={errors.phone}
-          />
+        <form onSubmit={handleSubmit} style={{ textAlign: "center" }}>
+          <div>
+            <TextField
+              label="Nombre"
+              variant="outlined"
+              name="name"
+              onChange={handleChange}
+              error={errors.name ? true : false}
+              helperText={errors.name}
+              style={{ marginBottom: "30px" }}
+            />
+          </div>
+          <div>
+            <TextField
+              label="Email"
+              variant="outlined"
+              name="email"
+              onChange={handleChange}
+              error={errors.email ? true : false}
+              helperText={errors.email}
+              style={{ marginBottom: "30px" }}
+            />
+          </div>
+          <div>
+            <TextField
+              label="Phone"
+              variant="outlined"
+              name="phone"
+              onChange={handleChange}
+              error={errors.phone ? true : false}
+              helperText={errors.phone}
+              style={{ marginBottom: "30px" }}
+            />
+          </div>
 
-          <Button type="submit" variant="contained">
+          <Button
+            type="submit"
+            variant="contained"
+            style={{ backgroundColor: "#9336b4" }}
+          >
             Enviar
           </Button>
         </form>
       ) : (
-        <h3>Su orden de compra es: {orderId}</h3>
+        <div style={{ textAlign: "center" }}>
+          <h1 className="titleAgrader">Muchas gracias por su compra!!!</h1>
+          <h3 className="orderNumber">Su orden de compra es: {orderId}</h3>
+        </div>
       )}
     </div>
   );
