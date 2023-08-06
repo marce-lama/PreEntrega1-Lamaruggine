@@ -15,7 +15,7 @@ import CartWidget from "../../common/cartWidget/CartWidget";
 import { Link } from "react-router-dom";
 import "../navbar/Navbar.css";
 
-const pages = ["Nosotros ", "Productos", "Contacto"];
+const pages = [];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
