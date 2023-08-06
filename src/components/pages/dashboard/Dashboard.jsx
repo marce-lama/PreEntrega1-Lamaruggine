@@ -12,9 +12,15 @@ const Dashboard = () => {
   };
 
   return (
-    <div>
-      <h1>Ruta para el Administrador</h1>
-      <Button variant="contained" onClick={rellenar}>
+    <div style={{ padding: 10, margin: 20 }}>
+      <h1 style={{ fontFamily: "fantasy", color: "#606c5d", marginBottom: 20 }}>
+        Ruta para el Administrador
+      </h1>
+      <Button
+        style={{ backgroundColor: "#9336b4" }}
+        variant="contained"
+        onClick={rellenar}
+      >
         Rellenar base de datos
       </Button>
     </div>
