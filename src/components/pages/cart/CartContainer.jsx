@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import "../cart/CartContainer.css";
-import { Warning } from "@mui/icons-material";
+import React from "react";
 
 const CartContainer = () => {
   const { cart, clearCart, deleteById, getTotalPrice } =
@@ -56,36 +56,38 @@ const CartContainer = () => {
                 <th></th>
               </tr>
             </thead>
-            {cart.map((elemento) => {
-              return (
-                <>
-                  <tr className="itemListTable">
-                    <td>
-                      <img
-                        className="imagenList"
-                        src={`${elemento.img}`}
-                        alt=""
-                      />
-                    </td>
-                    <td>{elemento.id}</td>
-                    <td>{elemento.marca}</td>
-                    <td>{elemento.title}</td>
-                    <td>{elemento.quantity}</td>
-                    <td>${elemento.price}</td>
-                    <td>${elemento.quantity * elemento.price}</td>
-                    <td>
-                      <Button
-                        style={{ backgroundColor: "#9336b4" }}
-                        variant="contained"
-                        onClick={() => deleteById(elemento.id)}
-                      >
-                        Eliminar
-                      </Button>
-                    </td>
-                  </tr>
-                </>
-              );
-            })}
+            <tbody>
+              {cart.map((elemento) => {
+                return (
+                  <React.Fragment key={elemento.id}>
+                    <tr className="itemListTable">
+                      <td>
+                        <img
+                          className="imagenList"
+                          src={`${elemento.img}`}
+                          alt=""
+                        />
+                      </td>
+                      <td>{elemento.id}</td>
+                      <td>{elemento.marca}</td>
+                      <td>{elemento.title}</td>
+                      <td>{elemento.quantity}</td>
+                      <td>${elemento.price}</td>
+                      <td>${elemento.quantity * elemento.price}</td>
+                      <td>
+                        <Button
+                          style={{ backgroundColor: "#9336b4" }}
+                          variant="contained"
+                          onClick={() => deleteById(elemento.id)}
+                        >
+                          Eliminar
+                        </Button>
+                      </td>
+                    </tr>
+                  </React.Fragment>
+                );
+              })}
+            </tbody>
           </table>
         </div>
       )}
