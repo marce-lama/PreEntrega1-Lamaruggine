@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import { Link } from "react-router-dom";
-import "../productCard/productCard.css";
+import "../productCard/ProductCard.css";
 
 const ProductCard = ({ item }) => {
   return (
